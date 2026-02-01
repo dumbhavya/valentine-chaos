@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Chaos 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;700&display=swap');
+
+body{
+margin:0;
+background:linear-gradient(135deg,#ffd6ec,#ffc2e2);
+font-family:'Quicksand',sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+position:relative;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:18px;
+animation:floatUp linear infinite;
+opacity:0.8;
+pointer-events:none;
+}
+@keyframes floatUp{
+from{transform:translateY(0);}
+to{transform:translateY(-110vh);}
+}
+
+.screen{
+display:none;
+text-align:center;
+width:100%;
+max-width:400px;
+position:relative;
+z-index:2;
+}
+.active{display:block;}
+
+h1{
+font-family:'Press Start 2P',cursive;
+font-size:13px;
+color:#ff4da6;
+margin-bottom:20px;
+}
+
+button{
+background:#ff99cc;
+border:3px solid #ff4da6;
+padding:8px 16px;
+margin:6px;
+border-radius:14px;
+font-size:12px;
+box-shadow:3px 3px #ff4da6;
+cursor:pointer;
+transition:.2s;
+}
+button:hover{transform:translateY(-2px);}
+
+.popup{
+background:white;
+padding:15px;
+border-radius:16px;
+border:3px solid #ff4da6;
+}
+
+input, textarea{
+padding:6px;
+border-radius:8px;
+border:2px solid #ff4da6;
+width:90%;
+margin-top:8px;
+font-family:'Quicksand',sans-serif;
+}
+
+textarea{
+height:90px;
+resize:none;
+}
+
+.vault-box{
+background:#fff0f8;
+border:4px solid #ff4da6;
+border-radius:20px;
+padding:15px;
+margin-top:15px;
+box-shadow:5px 5px #ff99cc;
+}
+
+.vault-icon{font-size:60px;margin:8px;}
+.scroll{font-size:30px;display:none;cursor:pointer;}
+
+.message{
+display:none;
+background:white;
+padding:12px;
+border-radius:14px;
+border:2px dashed #ff4da6;
+margin-top:12px;
+max-height:240px;
+overflow-y:auto;
+text-align:left;
+font-size:13px;
+white-space:pre-wrap;
+}
+
+.replies{
+margin-top:10px;
+max-height:150px;
+overflow-y:auto;
+font-size:12px;
+text-align:left;
+background:#fff;
+padding:6px;
+border-radius:8px;
+border:1px solid #ff99cc;
+white-space:pre-wrap;
+}
+
+.back{
+position:absolute;
+top:8px;
+left:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+@keyframes pop{from{transform:scale(0);}to{transform:scale(1);}}
+</style>
+</head>
+
+<body>
+
+<!-- Valentine Screen -->
+<div class="screen active" id="valentine">
+<h1 id="valText">💌 Will you be my valentine?</h1>
+<div id="valButtons">
+<button onclick="valYes()">Yes 💖</button>
+<button onclick="valNo()">No 💔</button>
+</div>
+</div>
+
+<!-- Home -->
+<div class="screen" id="home">
+<h1>💗 Secret Pixel Vault 💗</h1>
+<button onclick="goTo('deepa')">Deepa 💕</button>
+<button onclick="goTo('akshita')">Akshita 🌸</button>
+<button onclick="goTo('srishti')">Srishti 🎀</button>
+</div>
+
+<!-- DEEPA -->
+<div class="screen" id="deepa">
+<div class="back" onclick="goHome()">🏠</div>
+<div class="popup" id="popup-deepa">
+Enter password ✨<br>
+<input type="password" id="pass-deepa"><br><br>
+<button onclick="unlock('deepa','4evermine')">Unlock 💖</button>
+</div>
+
+<div class="vault-box" id="vaultArea-deepa" style="display:none;">
+<div class="vault-icon" id="vault-deepa">🔐💗</div>
+<button onclick="toggleVault('deepa')" id="btn-deepa">Open Love Vault ✨</button>
+<div class="scroll" id="scroll-deepa" onclick="showMsg('deepa')">📜💌</div>
+
+<div class="message" id="msg-deepa">
+<h2>🧁</h2>
+Hi Deepa. So first of all, happy Valentine's week, Happy Valentine's Day and I love you so, so much. Of course, you are my girlfriend after all. And no matter whatever or whoever becomes your spouse in the future or today, whoever becomes your boyfriend, I will always consider.Myself as your first love and the one that will.Will be always there for you no matter what. And I love spoiling you. I love talking to you. And yes, after 10th grade it has been hard for us to keep up with each other's life.And yeah, we dononet know everything about each other now, but that's not what best friends are. Best friends are not supposed to know everything about each other. Best friends are supposed to be as such. Whenever they meet, it doesn't feel awkward. It doesn't feel like we haven't met in ages. And so there is a gap between us. We have that normalcy. We have that comfort between us, whether we meet today or 10 years later.I really hope that we.All get to go on a girls trip together.To Europe. It would be so fun, right? Like, really. And I really love you so, so much. And I keep telling this to everybody that you are the most gorgeous woman I've ever met. Touchwood meri nazar na lag Jaya tum ko. And yeah.I am not.Approving of the potential.Boyfriend that you are going to make that is right now your talking stage OD because I care about you but.If he proves that he is good for you, then yeah, you have my approval. I don't know if my approval is what matters the most, because what matters the most is that you are happy. So even if I don't approve and you are the happiest with him, then do that. Because do you, babe, you are you and nobody has the right to take that away from you.And just pyar me Joker mat Banjana, I love you so so much.So, so much and I hope the very, very best for you. Also.Uh I'm going to clear things with srishti but tum meri mummy se jaa ke ye kyu puchhi thi Ki bhavya theek to hai na. 😭😭My mom thought that something has happened to you or me. I love you and I love you so, so much and I hope the very, very best for you.Yeah. And I really hope, I think if I had a choice to give you a career, like what career suits you the best, it would definitely be like.Something in the fashion industry, like a model? No, like something in the creative industry. Something in the fashion industry like NIFT, you know. Anyways happy valentine's baby💖
+
+<textarea id="deepaInput" placeholder="Write back to Bhavya 💗"></textarea>
+<button onclick="sendReply('deepaReplies','deepaInput')">Send 💌</button>
+<div class="replies" id="deepaRepliesBox"></div>
+
+</div>
+</div>
+</div>
+
+<!-- AKSHITA -->
+<div class="screen" id="akshita">
+<div class="back" onclick="goHome()">🏠</div>
+<div class="popup" id="popup-akshita">
+Enter password ✨<br>
+<input type="password" id="pass-akshita"><br><br>
+<button onclick="unlock('akshita','enchantedtomeetyou')">Unlock 💖</button>
+</div>
+
+<div class="vault-box" id="vaultArea-akshita" style="display:none;">
+<div class="vault-icon" id="vault-akshita">🔐🌸</div>
+<button onclick="toggleVault('akshita')" id="btn-akshita">Open Love Vault ✨</button>
+<div class="scroll" id="scroll-akshita" onclick="showMsg('akshita')">📜💌</div>
+
+<div class="message" id="msg-akshita">
+<h2>🧁</h2>
+Hi akshita
+Happy valentine's day. We have been together for like 12-13 years and this is like the first time when I'm actually properly asking you to be my valentine(sharam kar ye bhi mai hu kar rhi hu💔) anyways you're going this year and that surprisingly does not make me emotional at all because it's not a goodbye ki chal be ab kabhi nahi milenge it's a normal ya I'm going. It's not like it's your last day on earth. So it's fine. This is not your farewell gift, it'll be way more extravagant than this wo to hum bore ho rhe the to this was made. And what cheers to everything we've had together. Have the most fun you can in this new journey of your life. And do everything you've ever wished to do. Live the life to its fullest. Because you can literally died tomorrow, and ik people just say this but I mean think about it, shaswat bhaiya ke papa was fit and fine and then boom sudden heart attack gone. I'm not scaring you in making you realise that you only live once so live it to the fullest PLEASEEEE. Stop hesitating stop apologizing for being yourself and be unapologetically bold and fun. Happy valentine's! Soon both of us will find someone sexy and smart you find will I'll find finn both khush😔🙏🏻. And he'll see you more than you see yourself, love you more than you love yourself. And until then and even after mai to hu hi👅. And I know this fs ki whenever I get married, ill deffo have a Christian wedding too and you'll be the maid of honour there. Anyways happy valentine's my love!
+
+<textarea id="akshitaInput" placeholder="Write back to Bhavya 💗"></textarea>
+<button onclick="sendReply('akshitaReplies','akshitaInput')">Send 💌</button>
+<div class="replies" id="akshitaRepliesBox"></div>
+
+</div>
+</div>
+</div>
+
+<!-- SRISHTI -->
+<div class="screen" id="srishti">
+<div class="back" onclick="goHome()">🏠</div>
+<div class="popup" id="popup-srishti">
+Enter password ✨<br>
+<input type="password" id="pass-srishti"><br><br>
+<button onclick="unlock('srishti','iloveyouso')">Unlock 💖</button>
+</div>
+
+<div class="vault-box" id="vaultArea-srishti" style="display:none;">
+<div class="vault-icon" id="vault-srishti">🔐🎀</div>
+<button onclick="toggleVault('srishti')" id="btn-srishti">Open Love Vault ✨</button>
+<div class="scroll" id="scroll-srishti" onclick="showMsg('srishti')">📜💌</div>
+
+<div class="message" id="msg-srishti">
+<h2>🧁</h2>
+Hi, Srishti. Happy Valentine's Week. Happy Valentine's Day, my love. And consider me as your boyfriend who has created this whole thing for you. Yeah, just be the main character of this story if you like that last year.During this month I gave you the Abhay Varma video wish Happy birthday surprise and I tried to do that this year for all of you 3. But I guess my charm doesn't work every time, right? There are.Limitations to it, but I actually tried and I won't be telling you who I approached because that's another thing Now what happened in January. So The thing is that what why I was behaving weird.Is not because.Of your action, OK, but because you did not come and clarify things with me, like you did not have a conversation with me. Like, see, The thing is I want Ki if you have any problems, which we are gonna because nobody is perfect, right? And if we have anything in between us that is coming between us, we should discuss it. We should talk about it and not.Guess Ki kya ho raha hai because.Why Guess where you can actually talk about it? But anyways, that's behind us and.If anything, it has only strengthened our relationship. Or atleast that's what I feel. Anyways I love you a lot  and yeah I hope we end up in a world tour together because DUHH!! This is not a very extravagant kinda gift but I think it's cute enough. Anyways aap to bhot maal ho yawwr mai kya batauuuu aap sexy to bhot hoooo and you have been through a lot, probably still going through a lot but anyways happy valentine's day my love! And yeah after changing schools yes technically we are not so close as in we don't know what's happening in each other's life but that's not what best friends are so Im not worried about that even a tad bit. Soon you'll find someone who loves you as much as you love everybody, who sees you more than you see yourself and holds your heart way better than that chikni gand. And until he arrives and even AFTER he arrives, in always here! Happy valentine's!
+
+<textarea id="srishtiInput" placeholder="Write back to Bhavya 💗"></textarea>
+<button onclick="sendReply('srishtiReplies','srishtiInput')">Send 💌</button>
+<div class="replies" id="srishtiRepliesBox"></div>
+
+</div>
+</div>
+</div>
+
+<script>
+function createHeart(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="💗";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),8000);
+}
+setInterval(createHeart,400);
+
+let stage=0;
+function valYes(){switchScreen("home");}
+function valNo(){
+stage++;
+if(stage===1) valText.innerHTML="You clicked that by mistake right? 🥺";
+else if(stage===2) valText.innerHTML="Do you even love me? 💞";
+else if(stage===3) valText.innerHTML="Okay then let me atleast spoil you on Valentine's 🥹";
+else if(stage===4){
+valText.innerHTML="Are you okay with my heart being broken? 💔";
+valButtons.innerHTML=`<button onclick="heartYes()">Yes 💔</button><button onclick="valYes()">No 😭</button>`;
+}
+}
+function heartYes(){
+valText.innerHTML="You know you're a really bad person 😤";
+valButtons.innerHTML=`<button onclick="valYes()">Okay you win 😭</button><button onclick="finalYes()">Idc 😒</button>`;
+}
+function finalYes(){
+valText.innerHTML="THE FINAL WILL YOU BE MY VALENTINE 💗💗💗";
+valButtons.innerHTML="";
+valButtons.style.position="relative";
+spawnYes(1);
+setTimeout(()=>spawnYes(2),400);
+setTimeout(()=>spawnYes(3),800);
+setTimeout(()=>spawnYes(2),1200);
+}
+function spawnYes(count){
+for(let i=0;i<count;i++){
+let btn=document.createElement("button");
+btn.innerHTML="YES 💖";
+btn.onclick=valYes;
+btn.style.position="absolute";
+btn.style.left=(10+Math.random()*70)+"%";
+btn.style.top=(10+Math.random()*60)+"%";
+btn.style.animation="pop 0.2s ease forwards";
+valButtons.appendChild(btn);
+}
+}
+function switchScreen(id){
+document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
+document.getElementById(id).classList.add("active");
+}
+function goTo(id){switchScreen(id);}
+function goHome(){switchScreen("home");}
+function unlock(name,password){
+let input=document.getElementById("pass-"+name).value;
+if(input===password){
+document.getElementById("popup-"+name).style.display="none";
+document.getElementById("vaultArea-"+name).style.display="block";
+}
+}
+function toggleVault(name){
+let vault=document.getElementById("vault-"+name);
+let btn=document.getElementById("btn-"+name);
+let scroll=document.getElementById("scroll-"+name);
+if(vault.innerHTML.includes("🔐")){
+vault.innerHTML="🔓💖✨";
+btn.innerHTML="Close Love Vault 🔒";
+scroll.style.display="block";
+}else{
+vault.innerHTML="🔐💗";
+btn.innerHTML="Open Love Vault ✨";
+scroll.style.display="none";
+document.getElementById("msg-"+name).style.display="none";
+}
+}
+function showMsg(name){
+document.getElementById("msg-"+name).style.display="block";
+}
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAfh9R7lbrUwpQdZPY-SSWqXSBXCnVBAPI",
+  authDomain: "valentine-chaos.firebaseapp.com",
+  projectId: "valentine-chaos",
+  storageBucket: "valentine-chaos.firebasestorage.app",
+  messagingSenderId: "147340599526",
+  appId: "1:147340599526:web:c1b4051049872720b9db27"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.sendReply = async function(collectionName,inputId){
+const input=document.getElementById(inputId);
+if(!input.value.trim()) return;
+await addDoc(collection(db, collectionName),{
+text: input.value,
+timestamp: Date.now()
+});
+input.value="";
+};
+
+function listen(collectionName,boxId){
+const q=query(collection(db,collectionName),orderBy("timestamp","desc"));
+onSnapshot(q,(snapshot)=>{
+const box=document.getElementById(boxId);
+box.innerHTML="";
+snapshot.forEach(doc=>{
+box.innerHTML+=`💗 ${doc.data().text}\n\n`;
+});
+});
+}
+
+listen("deepaReplies","deepaRepliesBox");
+listen("akshitaReplies","akshitaRepliesBox");
+listen("srishtiReplies","srishtiRepliesBox");
+</script>
+
+</body>
+</html> 
